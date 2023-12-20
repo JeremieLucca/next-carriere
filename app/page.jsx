@@ -42,7 +42,7 @@ export default function Home() {
           : [department];
 
         return (
-          (filters.text === "" || text.toLowerCase().includes(filters.text)) &&
+          (filters.text === "" || text.toLowerCase().includes(filters.text.toLowerCase())) &&
           (filters.team === "" ||
             teamValues.some((value) => value.includes(filters.team))) &&
           (filters.location === "" ||
@@ -108,7 +108,7 @@ export default function Home() {
           <div className={styles.links}>
             <Link href="/">Ton job à la R&D</Link>
             <span>|</span>
-            <Link href="/">Candidature spontanée</Link>
+            <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15/apply">Candidature spontanée</Link>
           </div>
         </div>
 

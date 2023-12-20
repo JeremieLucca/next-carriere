@@ -20,7 +20,7 @@ export const Candidate = () => {
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam.
         </p>
-        <Link href="/" className="c-btn">Candidature spontanée</Link>
+        <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15/apply" className="c-btn">Candidature spontanée</Link>
       </div>
     </section>
   );
