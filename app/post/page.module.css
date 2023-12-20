@@ -1,0 +1,123 @@
+/*#region HEADER */
+.header {
+  width: 100%;
+  padding-top: 2rem;
+  background: url(/img/job/illu-header.svg) no-repeat;
+  background-position: top -60px left calc(50% + 250px);
+}
+
+.header .container {
+  width: min(90vw, 760px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header .linkHome {
+  position: relative;
+  text-decoration: underline;
+}
+.header .linkHome::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -12px;
+  width: 10px;
+  height: 6px;
+  background: url(/img/ico/ico-down.svg) no-repeat;
+  transform: rotate(90deg);
+  transition: 0.2s left ease-in;
+}
+.header .linkHome:hover {
+  text-decoration: none;
+}
+.header .linkHome:hover::before {
+  left: -18px;
+}
+
+/*#endregion */
+
+/*#region JOB TITLE */
+.intro {
+  width: min(90vw, 760px);
+  margin-inline: auto;
+}
+
+.intro h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.intro .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro .tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.intro .tags span {
+  padding: 4px 8px;
+  background: var(--gray50);
+  border-radius: 0.5rem;
+}
+/*#endregion */
+
+/*#region JOB INFOS */
+.infos {
+  width: min(90vw, 888px);
+  margin-block: 1rem;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.infos > section {
+  position: relative;
+}
+
+.infos .description::before {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: -300px;
+  width: 379px;
+  height: 444px;
+  background: url(/img/bg-bubble-double.svg) no-repeat;
+  z-index: -1;
+}
+
+.infos .description::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -300px;
+  width: 415px;
+  height: 423px;
+  background: url(/img/bg-bubble-triple.svg) no-repeat;
+  z-index: -1;
+}
+
+.infos .additional::after {
+  content: "";
+  background-image: url(/img/bg-tram.svg);
+  background-repeat: repeat;
+  background-size: 20px;
+  position: absolute;
+  bottom: 100px;
+  left: calc(50% - 700px);
+  width: 1400px;
+  height: 520px;
+  z-index: -2;
+}
+
+.infos .lastCTA {
+  margin-top: 4rem;
+  text-align: center;
+}
+/*#endregion */

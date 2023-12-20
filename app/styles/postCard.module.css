@@ -1,0 +1,61 @@
+.card {
+  position: relative;
+  padding: 2rem;
+  border: 1px solid var(--gray200);
+  background: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card .onHover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(60, 50, 64, 0.5);
+  opacity: 0;
+  transition: all .5s;
+}
+.card:hover .onHover {
+  opacity: 1;
+}
+
+.card .onHover .btn {
+  transform: translateY(30px);
+  transition: transform 0.3s;
+}
+.card:hover .onHover .btn {
+  transform: translateY(0px);
+}
+
+.card .team {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: fit-content;
+  background: var(--primary-fade);
+  border-radius: 8px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card .post {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card .more {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+.card .more span {
+  background: var(--gray50);
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 0.5rem;
+}

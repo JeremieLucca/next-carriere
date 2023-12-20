@@ -1,76 +1,19 @@
 :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --primary: #ff7b3d;
+  --primary-fade: #fff1eb;
+  --secondary: #004ee8;
+  --primary-hover: #eb5c14;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+  --gray50: #ebf0fa;
+  --gray100: #e0e7f6;
+  --gray200: #d2dcef;
+  --gray300: #becbe4;
+  --gray400: #acbbd7;
+  --gray500: #96a6c5;
+  --gray600: #6c7c9d;
+  --gray700: #445473;
+  --gray800: #2a3551;
+  --gray900: #131d35;
 }
 
 * {
@@ -86,13 +29,33 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--gray700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 0 1rem 0;
+  color: var(--gray800);
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  padding: 1rem 0 1rem 0;
+}
+
+p:not(:last-child) {
+  padding-bottom: 1rem;
 }
 
 a {
@@ -100,8 +63,96 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+::placeholder {
+  color: #91a2c3;
+}
+
+select {
+  color: var(--gray700);
+}
+
+main {
+  margin-block: 2rem 4rem;
+}
+
+.container {
+  width: min(90vw, 1024px);
+  margin-inline: auto;
+}
+
+.container-s {
+  width: min(90vw, 888px);
+  margin-inline: auto;
+}
+
+.container-xs {
+  width: min(90vw, 760px);
+  margin-inline: auto;
+}
+
+.grid {
+  --column-count: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  gap: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .grid {
+    --column-count: 2;
   }
+}
+@media screen and (min-width: 1024px) {
+  .grid[data-columns="3"] {
+    --column-count: 3;
+  }
+  .grid[data-columns="4"] {
+    --column-count: 4;
+  }
+}
+
+.c-btn {
+  display: inline-block;
+  width: auto;
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none !important;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.c-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* FOOTER */
+footer .container {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .img-people {
+  width: max(100vw, 640px);
+  height: auto;
+}
+
+footer a {
+  margin-bottom: 2rem;
+}
+
+footer .ref_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+section:has(.grid:empty) {
+  display: none;
 }

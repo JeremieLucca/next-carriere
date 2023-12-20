@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+  <g id="down" transform="translate(5 3)">
+    <path id="Tracé_9" data-name="Tracé 9" d="M.293.293a1,1,0,0,1,1.414,0L5,3.586,8.293.293A1,1,0,0,1,9.707,1.707l-4,4a1,1,0,0,1-1.414,0l-4-4A1,1,0,0,1,.293.293Z" transform="translate(-5 -3)" fill="#131d35" fill-rule="evenodd"/>
+  </g>
+</svg>

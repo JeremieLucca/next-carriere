@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="ico-charts" transform="translate(21 21)">
+    <g id="Groupe_23197" data-name="Groupe 23197" transform="translate(-21 -21)">
+      <g id="Groupe_23196" data-name="Groupe 23196">
+        <path id="Tracé_85758" data-name="Tracé 85758" d="M41.487,32.2c-.719,5.3-3.86,8.594-9.292,9.3A91.93,91.93,0,0,1,21,42a107.389,107.389,0,0,1-11.193-.5C4.659,40.944,1.07,37.724.515,32.206.2,29.05,0,25.168,0,20.839A95.578,95.578,0,0,1,.511,9.78C1.145,4.542,4.36,1.022,9.833.483,12.846.186,16.6,0,21,0A102.627,102.627,0,0,1,32.17.483c5.384.614,8.6,4.134,9.323,9.3A84.6,84.6,0,0,1,42,20.839,89.5,89.5,0,0,1,41.487,32.2" fill="#d2dcef"/>
+        <g id="Groupe_23195" data-name="Groupe 23195" transform="translate(9.625 9.625)">
+          <g id="Groupe_23194" data-name="Groupe 23194">
+            <g id="Groupe_23190" data-name="Groupe 23190" transform="translate(17.5)">
+              <rect id="Rectangle_9344" data-name="Rectangle 9344" width="5.25" height="22.75" rx="1.75" transform="translate(0)" fill="#fff"/>
+              <path id="Rectangle_9345" data-name="Rectangle 9345" d="M1.655,0H3.6A1.655,1.655,0,0,1,5.25,1.655V7a0,0,0,0,1,0,0H0A0,0,0,0,1,0,7V1.655A1.655,1.655,0,0,1,1.655,0Z" transform="translate(0)" fill="#ff7b3d"/>
+            </g>
+            <g id="Groupe_23192" data-name="Groupe 23192" transform="translate(8.75 5.25)">
+              <g id="Groupe_23191" data-name="Groupe 23191">
+                <rect id="Rectangle_9346" data-name="Rectangle 9346" width="5.25" height="17.5" rx="1.75" fill="#fff"/>
+              </g>
+              <path id="Rectangle_9347" data-name="Rectangle 9347" d="M1.655,0H3.6A1.655,1.655,0,0,1,5.25,1.655v3.6a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v-3.6A1.655,1.655,0,0,1,1.655,0Z" fill="#6c7c9d"/>
+            </g>
+            <g id="Groupe_23193" data-name="Groupe 23193" transform="translate(0 8.75)">
+              <rect id="Rectangle_9348" data-name="Rectangle 9348" width="5.25" height="14" rx="1.75" transform="translate(0)" fill="#fff"/>
+              <path id="Rectangle_9349" data-name="Rectangle 9349" d="M1.655,0H3.6A1.655,1.655,0,0,1,5.25,1.655v3.6a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0v-3.6A1.655,1.655,0,0,1,1.655,0Z" fill="#acbbd7"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
