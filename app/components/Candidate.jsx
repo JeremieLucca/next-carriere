@@ -16,7 +16,7 @@ export const Candidate = () => {
       <div className={styles.txt}>
         <h2>Candidature spontanée</h2>
         <p>Si vous êtes passionné(e) par votre métier et que vous souhaitez évoluer dans un environnement stimulant. Nous sommes ouverts à toutes les candidatures et nous étudierons avec attention chaque profil.</p>
-        <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15" className="c-btn">Candidature spontanée</Link>
+        <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15" className="c-btn" target="_blank">Candidature spontanée</Link>
       </div>
     </section>
   );

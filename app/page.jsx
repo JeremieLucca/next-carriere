@@ -58,7 +58,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    
+    filterJobs();
   }, [filters]);
 
   const handleChange = (e) => {
@@ -107,9 +107,9 @@ export default function Home() {
             placeholder="Rechercher un poste"
           />
           <div className={styles.links}>
-            <Link href="/">Ton job à la R&D</Link>
-            <span>|</span>
-            <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15">
+            {/* <Link href="/">Ton job à la R&D</Link>
+            <span>|</span> */}
+            <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15" target="_blank">
               Candidature spontanée
             </Link>
           </div>
@@ -211,7 +211,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Customer Success</h2>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Marketing</h2>
               </div>
             </div>
@@ -251,6 +251,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
+                
                 <h2>Finance</h2>
               </div>
             </div>
@@ -270,7 +271,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Talent</h2>
               </div>
             </div>
@@ -290,7 +291,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Socle RH</h2>
               </div>
             </div>
@@ -310,7 +311,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Paie</h2>
               </div>
             </div>
@@ -330,7 +331,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Temps et activités</h2>
               </div>
             </div>
@@ -350,7 +351,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Direction RH</h2>
               </div>
             </div>
@@ -370,7 +371,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Channel</h2>
               </div>
             </div>
@@ -390,7 +391,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Direction Technique</h2>
               </div>
             </div>
@@ -410,7 +411,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Business Technology</h2>
               </div>
             </div>
@@ -430,7 +431,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-
+                
                 <h2>Product Tech</h2>
               </div>
             </div>
