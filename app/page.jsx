@@ -431,8 +431,7 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                
-                <h2>Product Tech</h2>
+                <h2>R&D</h2>
               </div>
             </div>
             <div className="grid" data-columns="3">
