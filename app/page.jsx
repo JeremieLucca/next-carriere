@@ -42,7 +42,8 @@ export default function Home() {
           : [department];
 
         return (
-          (filters.text === "" || text.toLowerCase().includes(filters.text.toLowerCase())) &&
+          (filters.text === "" ||
+            text.toLowerCase().includes(filters.text.toLowerCase())) &&
           (filters.team === "" ||
             teamValues.some((value) => value.includes(filters.team))) &&
           (filters.location === "" ||
@@ -57,7 +58,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    filterJobs();
+    
   }, [filters]);
 
   const handleChange = (e) => {
@@ -108,7 +109,9 @@ export default function Home() {
           <div className={styles.links}>
             <Link href="/">Ton job à la R&D</Link>
             <span>|</span>
-            <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15/apply">Candidature spontanée</Link>
+            <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15">
+              Candidature spontanée
+            </Link>
           </div>
         </div>
 
@@ -182,20 +185,14 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
+                {/* <Image
                   src="/img/ico/ico-target.svg"
                   alt="icon target"
                   width={42}
                   height={42}
-                />
+                /> */}
                 <h2>Sales</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -214,18 +211,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Customer Success</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -243,18 +231,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Marketing</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -272,18 +251,8 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
                 <h2>Finance</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -301,18 +270,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Talent</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -330,18 +290,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Socle RH</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -359,18 +310,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Paie</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -388,18 +330,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Temps et activités</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -417,18 +350,29 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
+                <h2>Direction RH</h2>
+              </div>
+            </div>
+            <div className="grid" data-columns="3">
+              {jobs ? (
+                filteredJobs.map((post) => {
+                  if (post.categories.department === "Direction RH") {
+                    return <PostCard key={post.id} post={post} />;
+                  }
+                })
+              ) : (
+                <LoadingCard number="3" />
+              )}
+            </div>
+          </section>
+
+          <section>
+            <div className={styles.intro}>
+              <div className={styles.title}>
+
                 <h2>Channel</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -446,18 +390,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Direction Technique</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -475,18 +410,9 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Business Technology</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
@@ -504,23 +430,20 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <Image
-                  src="/img/ico/ico-star.svg"
-                  alt="icon star"
-                  width={42}
-                  height={42}
-                />
+
                 <h2>Product Tech</h2>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </p>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
                 filteredJobs.map((post) => {
-                  if (post.categories.department === "Product Tech") {
+                  const allowedDepartments = [
+                    "Product Tech",
+                    "Gamme Cleemy",
+                    "Gamme Poplee",
+                    "Gamme Pagga",
+                  ];
+                  if (allowedDepartments.includes(post.categories.department)) {
                     return <PostCard key={post.id} post={post} />;
                   }
                 })
