@@ -29,10 +29,15 @@ body {
 }
 
 body {
+  font-family: system-ui, sans-serif;
   color: var(--gray700);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+* {
+  font-family: system-ui, sans-serif;
 }
 
 h1,
