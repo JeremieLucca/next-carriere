@@ -107,10 +107,15 @@ export default function Home() {
             placeholder="Rechercher un poste"
           />
           <div className={styles.links}>
-            {/* <Link href="/">Ton job à la R&D</Link>
-            <span>|</span> */}
-            <Link href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15" target="_blank">
-              Candidature spontanée
+            <Link href="https://jobs.luccasoftware.com/">
+              <b>Retour sur la page carrière</b>
+            </Link>
+            <span>|</span>
+            <Link
+              href="https://jobs.lever.co/lucca/d372a3f5-4a6d-4149-b4bf-6a137a3cec15"
+              target="_blank"
+            >
+              <b>Candidature spontanée</b>
             </Link>
           </div>
         </div>
@@ -211,14 +216,13 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                
-                <h2>Customer Success</h2>
+                <h2>R&D</h2>
               </div>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
                 filteredJobs.map((post) => {
-                  if (post.categories.department === "Customer Success") {
+                  if (post.categories.department === "R&D") {
                     return <PostCard key={post.id} post={post} />;
                   }
                 })
@@ -231,7 +235,6 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                
                 <h2>Marketing</h2>
               </div>
             </div>
@@ -251,127 +254,6 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                
-                <h2>Finance</h2>
-              </div>
-            </div>
-            <div className="grid" data-columns="3">
-              {jobs ? (
-                filteredJobs.map((post) => {
-                  if (post.categories.department === "Finance") {
-                    return <PostCard key={post.id} post={post} />;
-                  }
-                })
-              ) : (
-                <LoadingCard number="3" />
-              )}
-            </div>
-          </section>
-
-          <section>
-            <div className={styles.intro}>
-              <div className={styles.title}>
-                
-                <h2>Talent</h2>
-              </div>
-            </div>
-            <div className="grid" data-columns="3">
-              {jobs ? (
-                filteredJobs.map((post) => {
-                  if (post.categories.department === "Talent") {
-                    return <PostCard key={post.id} post={post} />;
-                  }
-                })
-              ) : (
-                <LoadingCard number="3" />
-              )}
-            </div>
-          </section>
-
-          <section>
-            <div className={styles.intro}>
-              <div className={styles.title}>
-                
-                <h2>Socle RH</h2>
-              </div>
-            </div>
-            <div className="grid" data-columns="3">
-              {jobs ? (
-                filteredJobs.map((post) => {
-                  if (post.categories.department === "Socle RH") {
-                    return <PostCard key={post.id} post={post} />;
-                  }
-                })
-              ) : (
-                <LoadingCard number="3" />
-              )}
-            </div>
-          </section>
-
-          <section>
-            <div className={styles.intro}>
-              <div className={styles.title}>
-                
-                <h2>Paie</h2>
-              </div>
-            </div>
-            <div className="grid" data-columns="3">
-              {jobs ? (
-                filteredJobs.map((post) => {
-                  if (post.categories.department === "Paie") {
-                    return <PostCard key={post.id} post={post} />;
-                  }
-                })
-              ) : (
-                <LoadingCard number="3" />
-              )}
-            </div>
-          </section>
-
-          <section>
-            <div className={styles.intro}>
-              <div className={styles.title}>
-                
-                <h2>Temps et activités</h2>
-              </div>
-            </div>
-            <div className="grid" data-columns="3">
-              {jobs ? (
-                filteredJobs.map((post) => {
-                  if (post.categories.department === "Temps et activités") {
-                    return <PostCard key={post.id} post={post} />;
-                  }
-                })
-              ) : (
-                <LoadingCard number="3" />
-              )}
-            </div>
-          </section>
-
-          <section>
-            <div className={styles.intro}>
-              <div className={styles.title}>
-                
-                <h2>Direction RH</h2>
-              </div>
-            </div>
-            <div className="grid" data-columns="3">
-              {jobs ? (
-                filteredJobs.map((post) => {
-                  if (post.categories.department === "Direction RH") {
-                    return <PostCard key={post.id} post={post} />;
-                  }
-                })
-              ) : (
-                <LoadingCard number="3" />
-              )}
-            </div>
-          </section>
-
-          <section>
-            <div className={styles.intro}>
-              <div className={styles.title}>
-                
                 <h2>Channel</h2>
               </div>
             </div>
@@ -391,14 +273,13 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                
-                <h2>Direction Technique</h2>
+                <h2>Direction Finance</h2>
               </div>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
                 filteredJobs.map((post) => {
-                  if (post.categories.department === "Direction Technique") {
+                  if (post.categories.department === "Direction Finance") {
                     return <PostCard key={post.id} post={post} />;
                   }
                 })
@@ -411,7 +292,25 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                
+                <h2>Customer Success</h2>
+              </div>
+            </div>
+            <div className="grid" data-columns="3">
+              {jobs ? (
+                filteredJobs.map((post) => {
+                  if (post.categories.department === "Customer Success") {
+                    return <PostCard key={post.id} post={post} />;
+                  }
+                })
+              ) : (
+                <LoadingCard number="3" />
+              )}
+            </div>
+          </section>
+
+          <section>
+            <div className={styles.intro}>
+              <div className={styles.title}>
                 <h2>Business Technology</h2>
               </div>
             </div>
@@ -431,19 +330,32 @@ export default function Home() {
           <section>
             <div className={styles.intro}>
               <div className={styles.title}>
-                <h2>R&D</h2>
+                <h2>Direction Technique</h2>
               </div>
             </div>
             <div className="grid" data-columns="3">
               {jobs ? (
                 filteredJobs.map((post) => {
-                  const allowedDepartments = [
-                    "Product Tech",
-                    "Gamme Cleemy",
-                    "Gamme Poplee",
-                    "Gamme Pagga",
-                  ];
-                  if (allowedDepartments.includes(post.categories.department)) {
+                  if (post.categories.department === "Direction Technique") {
+                    return <PostCard key={post.id} post={post} />;
+                  }
+                })
+              ) : (
+                <LoadingCard number="3" />
+              )}
+            </div>
+          </section>
+
+          <section>
+            <div className={styles.intro}>
+              <div className={styles.title}>
+                <h2>Direction RH</h2>
+              </div>
+            </div>
+            <div className="grid" data-columns="3">
+              {jobs ? (
+                filteredJobs.map((post) => {
+                  if (post.categories.department === "Direction RH") {
                     return <PostCard key={post.id} post={post} />;
                   }
                 })
