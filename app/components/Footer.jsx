@@ -24,12 +24,14 @@ export const Footer = () => {
         </Link>
 
         <div className="ref_container">
-          <Image
-            src="/img/footer/glassdoor.svg"
-            alt="Glassdoor"
-            width={184}
-            height={68}
-          />
+          <Link href="https://www.glassdoor.fr/Pr%C3%A9sentation/Travailler-chez-Lucca-EI_IE1070371.16,21.htm">
+            <Image
+              src="/img/footer/glassdoor.svg"
+              alt="Glassdoor"
+              width={184}
+              height={68}
+            />
+          </Link>
           <Image
             src="/img/footer/certified.svg"
             alt="Certification Happy at work"

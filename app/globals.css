@@ -158,6 +158,10 @@ footer .ref_container {
   gap: 2rem;
 }
 
+footer .ref_container a {
+  margin-bottom: 0;
+}
+
 section:has(.grid:empty) {
   display: none;
 }
