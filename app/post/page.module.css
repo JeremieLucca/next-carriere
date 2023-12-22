@@ -21,7 +21,7 @@
 .header .linkHome::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 9px;
   left: -12px;
   width: 10px;
   height: 6px;
