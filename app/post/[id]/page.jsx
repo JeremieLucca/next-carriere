@@ -20,7 +20,7 @@ export default async function SinglePost({ params: { id } }) {
               className={styles.logo}
             />
           </Link>
-          <Link href="/" className={styles.linkHome}>
+          <Link href="/" className={styles.linkHome} prefetch={false}>
             Back to home
           </Link>
         </div>

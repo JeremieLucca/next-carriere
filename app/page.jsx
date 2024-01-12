@@ -12,6 +12,7 @@ import { LoadingCard } from "./components/LoadingCard";
 import { Candidate } from "./components/Candidate";
 
 export default function Home() {
+
   const { data: jobs, error, isLoading } = useFetchPosts();
 
   const [filteredJobs, setFilteredJobs] = useState([]);
