@@ -23,6 +23,18 @@ export default function Home() {
     department: "",
   });
 
+
+  useEffect(() => {
+    // Détecter si le navigateur est Safari
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    // Ajouter une classe si le navigateur est Safari
+    if (isSafari) {
+      document.body.classList.add("safari");
+    }
+  }, []);
+
+
   useEffect(() => {
     if (jobs) {
       setFilteredJobs(jobs);
