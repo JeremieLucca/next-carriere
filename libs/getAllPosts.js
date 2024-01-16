@@ -5,7 +5,10 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export const useFetchPosts = () => {
   const { data, error } = useSWR(
     'https://api.lever.co/v0/postings/lucca?mode=json',
-    fetcher
+    fetcher,
+    {
+      revalidateOnFocus: false, // Désactiver le cache
+    }
   );
 
   return {
